@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Header/>{/* //Mettre le header en dehors des routes pour le rendre visible sur toutes les pages */}
             <Routes>{/* //associer les routes(url) avec leurs composants */}
                 <Route path="/" element={<Home />} />
-                <Route path="/logement" element={<Logement />} />
+                <Route path="/logement/:id" element={<Logement />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/*" element={<Error404 />} />
             </Routes>
