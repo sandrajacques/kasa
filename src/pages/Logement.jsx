@@ -18,6 +18,26 @@ if(!infoLogement){
   )
 }
   return (
-    <div><Carousel images= {infoLogement.pictures} />{JSON.stringify(infoLogement)}</div>
+    <div className="logement__container" >
+      <Carousel images= {infoLogement.pictures} />
+      <div className="logement__infos">
+        <div className="logement__details">
+          <div className="title">{infoLogement.title}</div>
+          <p>{infoLogement.location}</p>
+          <p>
+            {
+              infoLogement.tags.map((tag,index) => <span key={index} >{tag}</span>)
+            }
+          </p>
+        </div>
+          <div className="logement__hote">
+            <div className="logement__hote__nom-image">
+              <p>{infoLogement.host.name}</p>
+              <img src={infoLogement.host.picture} alt="avatar" />
+            </div>
+          </div>
+      </div>
+      {JSON.stringify(infoLogement)}
+    </div>
   )
 }

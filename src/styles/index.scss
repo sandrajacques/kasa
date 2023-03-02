@@ -41,6 +41,19 @@ align-items: center;
   padding: 30px;
   gap: 30px;
   justify-content: center;
+  max-width: 1240px;
+  margin-inline: auto;
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin-inline: auto;
+  width: 100%;
+  align-items: center;
+  a:last-child{
+    margin-left: 57px;
+  }
 }
 footer{
   background-color: black;
@@ -48,3 +61,48 @@ footer{
   align-items: center;
   padding: 20px;
 }
+.logement__container{
+width: 100%;
+max-width: 1240px;
+margin-inline: auto;
+}
+.logement__infos{
+  display: flex;
+  justify-content: space-between;
+  margin-block: 24px;
+  color:$primary-color;
+  font-weight: 500;
+  .title{
+    font-size: 36px;
+    line-height: 51.34px;
+  }
+  p{
+  margin-bottom: 23px;
+  font-size: 18px;
+ 
+  }
+  span{
+    background-color: $primary-color;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 2px 40px;
+    margin-right: 10px;
+
+  }
+  .logement__hote__nom-image{
+    display: flex;
+    align-items: center;
+    p{
+      max-width: 100px;
+      text-align: right;
+      margin-right: 10px;
+
+    }
+    img{
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+    }
+  }
+  }

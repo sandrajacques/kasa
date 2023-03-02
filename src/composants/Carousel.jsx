@@ -1,4 +1,6 @@
 import { useState } from "react"
+import nextImg from "../assets/img/next.png"
+import precImg from "../assets/img/prec.png"
 
 export default function Carousel({images}){
 const [indexEnCours,setIndexEnCours]=useState(0)
@@ -20,7 +22,11 @@ function suivant(){
 
 return (
     <div className="carousel"><img src={images[indexEnCours]}/>
-    <button onClick={precedent}>Préc</button>
-    <button onClick={suivant}>Suivant</button>
+    <button className="prec" onClick={precedent}>
+        <img src={precImg} alt="vecteur Precedent" />
+    </button>
+    <button className="next" onClick={suivant}>
+        <img src={nextImg} alt="vecteur Suivant" />
+        </button>
     </div>)
 }
