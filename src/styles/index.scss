@@ -1,38 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import './CardLogement';
+@import './carousel';
+$primary-color: #FF6060;
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-  @import './CardLogement';
-  @import './carousel';
-$primary-color:#FF6060;
-#root{
+#root {
   margin: 20px;
 }
-*{
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
-img{
+
+img {
   display: block;
   object-fit: cover;
 }
-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-  nav{
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
     display: flex;
     font-weight: 500;
     font-size: 24px;
 
-    a{
-    color:$primary-color;
-    margin-left: 15px;
-    text-decoration: none;
+    a {
+      color: $primary-color;
+      margin-left: 15px;
+      text-decoration: none;
     }
   }
 }
-.container{
+
+.container {
   width: 100%;
   background: #F7F7F7;
   border-radius: 25px;
@@ -44,44 +49,52 @@ align-items: center;
   max-width: 1240px;
   margin-inline: auto;
 }
-.header__container{
+
+.header__container {
   display: flex;
   justify-content: space-between;
   max-width: 1240px;
   margin-inline: auto;
   width: 100%;
   align-items: center;
-  a:last-child{
+
+  a:last-child {
     margin-left: 57px;
   }
 }
-footer{
+
+footer {
   background-color: black;
   color: white;
   align-items: center;
   padding: 20px;
 }
-.logement__container{
-width: 100%;
-max-width: 1240px;
-margin-inline: auto;
+
+.logement__container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
 }
-.logement__infos{
+
+.logement__infos {
   display: flex;
   justify-content: space-between;
   margin-block: 24px;
-  color:$primary-color;
+  color: $primary-color;
   font-weight: 500;
-  .title{
+
+  .title {
     font-size: 36px;
-    line-height: 51.34px;
+    line-height: 51px;
   }
-  p{
-  margin-bottom: 23px;
-  font-size: 18px;
- 
+
+  p {
+    margin-bottom: 23px;
+    font-size: 18px;
+
   }
-  span{
+
+  span {
     background-color: $primary-color;
     color: white;
     border-radius: 10px;
@@ -90,19 +103,45 @@ margin-inline: auto;
     margin-right: 10px;
 
   }
-  .logement__hote__nom-image{
+
+  .logement__hote__nom-image {
     display: flex;
     align-items: center;
-    p{
+
+    p {
       max-width: 100px;
       text-align: right;
       margin-right: 10px;
 
     }
-    img{
+
+    img {
       border-radius: 50%;
       width: 64px;
       height: 64px;
     }
   }
+
+  .etoiles {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
   }
+}
+
+.accordeon{
+  .header{
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    h3{
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+  }
+}

@@ -1,6 +1,9 @@
 import React,  { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Carousel from '../composants/Carousel';
+import RatingStars from '../composants/RatingStars';
+import Accordeon from '../composants/Accordeon';
+
 export default function Logement() {
 const {id}=useParams();
 const [infoLogement,setInfoLogement]= useState(null)
@@ -35,8 +38,10 @@ if(!infoLogement){
               <p>{infoLogement.host.name}</p>
               <img src={infoLogement.host.picture} alt="avatar" />
             </div>
+            <RatingStars note={infoLogement.rating}/>
           </div>
-      </div>
+        </div>
+        <Accordeon titre="description" contenu={infoLogement.description}/>
       {JSON.stringify(infoLogement)}
     </div>
   )
