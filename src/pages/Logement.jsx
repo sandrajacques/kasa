@@ -41,8 +41,10 @@ if(!infoLogement){
             <RatingStars note={infoLogement.rating}/>
           </div>
         </div>
+        <div className='accordeons'>
         <Accordeon titre="description" contenu={infoLogement.description}/>
-      {JSON.stringify(infoLogement)}
+        <Accordeon titre="equipement" contenu={infoLogement.equipments}/>
+        </div>
     </div>
   )
 }

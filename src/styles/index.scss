@@ -23,11 +23,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  img{
+    width: 210px;
+    height: auto;
+  }
 
   nav {
     display: flex;
     font-weight: 500;
     font-size: 24px;
+    gap: 57px;
 
     a {
       color: $primary-color;
@@ -58,9 +63,7 @@ header {
   width: 100%;
   align-items: center;
 
-  a:last-child {
-    margin-left: 57px;
-  }
+
 }
 
 footer {
@@ -130,6 +133,10 @@ footer {
 }
 
 .accordeon{
+border-radius: 10px;
+overflow: hidden;
+width: 100%;
+min-width: 335px;
   .header{
     background-color: #FF6060;
     display: flex;
@@ -142,6 +149,46 @@ footer {
       font-weight: 500;
       font-size: 18px;
     }
+img{
+transition: transform 1s ease-in-out;
+}
+  }
+.content{
+    color:#FF6060;
+    background-color: #F7F7F7;
+    transition: max-height 1s ease-in-out;
+    max-height: 500px;
+    overflow: hidden;
+  }
+&.open{
+  img{
+    transform: rotate(180deg);
 
   }
+  .content {
+    max-height: 0;
+  }
+}
+}
+.accordeons{
+  display: flex;
+  gap: 76px;
+}
+@media (max-width: 864px) {
+  .accordeons{
+  flex-direction: column;
+  }
+  header{
+    img{
+width: 145px;
+    }
+  }
+}
+@media (max-width:600px) {
+  header{
+  nav{
+    font-size: 12px;
+    gap: 10px;
+  }
+}
 }
