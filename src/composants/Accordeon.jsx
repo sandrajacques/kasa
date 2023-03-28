@@ -9,7 +9,11 @@ export default function Accordeon(props) {
             <h3>{props.titre} </h3>
             <img src={fleche} alt="fleche Icon" />
         </div>
-        <div className="content">{props.contenu}</div>
+        <div className="content">
+            {props.contenuTab?
+            <ul>{props.contenuTab.map((item,index)=><li key={index}>{item}</li>)}</ul>
+            :
+            <p>{props.contenu}</p>}</div>
 
     </div>
     )

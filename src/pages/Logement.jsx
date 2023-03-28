@@ -43,7 +43,7 @@ if(!infoLogement){
         </div>
         <div className='accordeons'>
         <Accordeon titre="description" contenu={infoLogement.description}/>
-        <Accordeon titre="equipement" contenu={infoLogement.equipments}/>
+        <Accordeon titre="equipements" contenuTab={infoLogement.equipments}/>
         </div>
     </div>
   )
