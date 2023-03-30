@@ -1,10 +1,12 @@
 import React from 'react'
+import logoFooter from '../assets/img/LogoFooter.png'
 
 export default function Footer() {
   return (
-    <div>
-      <img src=''></img>
+    <footer>
+      <img src={logoFooter}></img>
+      <p>© 2023 Kasa. All rights reserved</p>
 
-      </div>
+    </footer>
   );
 }

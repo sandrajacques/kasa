@@ -1,0 +1,19 @@
+.not-found{
+    color: $primary-color;
+    text-align: center;
+    min-height: calc(100vh - 361px);
+
+    .chiffre{
+        font-weight: 700;
+        font-size: 20vw;
+    }
+.message{
+    font-size: 2.7vw;
+    line-height: 142.6%;
+    margin-bottom: 20vh;
+}
+a{
+color:$primary-color;
+
+}
+}

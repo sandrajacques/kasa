@@ -1,20 +1,23 @@
+$primary-color: #FF6060;
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import './CardLogement';
 @import './carousel';
 @import './accordeon';
 @import './about';
+@import './error404';
+@import './footer';
 
-$primary-color: #FF6060;
 
-#root {
-  margin: 20px;
-}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  
+}
+body{
   font-size: 18px;
 }
 
@@ -27,6 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
   img{
     width: 210px;
     height: auto;
@@ -66,21 +70,17 @@ header {
   margin-inline: auto;
   width: 100%;
   align-items: center;
-
-
-}
-
-footer {
-  background-color: black;
-  color: white;
-  align-items: center;
   padding: 20px;
+
+
 }
+
 
 .logement__container {
   width: 100%;
   max-width: 1240px;
   margin-inline: auto;
+  padding: 20px;
 }
 
 .logement__infos {

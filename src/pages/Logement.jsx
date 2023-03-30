@@ -1,5 +1,5 @@
 import React,  { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import Carousel from '../composants/Carousel';
 import RatingStars from '../composants/RatingStars';
 import Accordeon from '../composants/Accordeon';
@@ -7,11 +7,16 @@ import Accordeon from '../composants/Accordeon';
 export default function Logement() {
 const {id}=useParams();
 const [infoLogement,setInfoLogement]= useState(null)
+const navigate=useNavigate();
 useEffect(()=>{
 fetch("/logements.json")
   .then(res=>res.json())
   .then(resultat=>{
 const logementEnCours = resultat.find(logement=>logement.id === id)
+if(!logementEnCours){
+
+navigate('/404');
+}
     setInfoLogement(logementEnCours)})
   .catch(error=>console.error(error))
 },[])
