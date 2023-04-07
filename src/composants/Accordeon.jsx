@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import fleche from '../assets/img/flecheAccordeon.png'
 
 export default function Accordeon(props) {
-    const [isOpen,setIsOpen]= useState(true)
+    const [isOpen,setIsOpen]= useState(false)
     return (
     <div className={`accordeon ${isOpen?"open":null} `} >
         <div onClick={()=>setIsOpen(!isOpen)} className="header">

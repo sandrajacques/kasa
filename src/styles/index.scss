@@ -35,7 +35,6 @@ header {
     width: 210px;
     height: auto;
   }
-
   nav {
     display: flex;
     font-weight: 500;
@@ -49,7 +48,34 @@ header {
     }
   }
 }
-
+.banniere-accueil{
+background-image: url("../assets/img/banniere-accueil.png");
+margin: auto;
+max-width: 1240px;
+width: 100%;
+height: 223px;
+mix-blend-mode: darken;
+border-radius: 25px;
+font-weight: 500;
+font-size: 48px;
+line-height: 142.6%;
+color: white;
+text-align: center;
+padding-block: 75px;
+position: relative;
+overflow: hidden;
+margin-bottom: 43px;
+}
+.banniere-accueil::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
 .container {
   width: 100%;
   background: #F7F7F7;
@@ -72,9 +98,7 @@ header {
   align-items: center;
   padding: 20px;
 
-
 }
-
 
 .logement__container {
   width: 100%;
@@ -98,7 +122,11 @@ header {
   p {
     margin-bottom: 23px;
     font-size: 18px;
-
+  }
+  .tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
   }
 
   span {
@@ -121,6 +149,7 @@ header {
       margin-right: 10px;
 
     }
+
 
     img {
       border-radius: 50%;
@@ -150,5 +179,16 @@ header {
     font-size: 12px;
     gap: 10px;
   }
+}
+.banniere-accueil{
+height: 111px;
+font-size: 24px;
+padding-block: 20px;
+text-align: left;
+border-radius: 10px;
+padding-left: 16px;
+margin-inline: 10px;
+width: auto;
+padding-right: 112px;
 }
 }

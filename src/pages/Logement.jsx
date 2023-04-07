@@ -32,7 +32,7 @@ if(!infoLogement){
         <div className="logement__details">
           <div className="title">{infoLogement.title}</div>
           <p>{infoLogement.location}</p>
-          <p>
+          <p className="tags">
             {
               infoLogement.tags.map((tag,index) => <span key={index} >{tag}</span>)
             }

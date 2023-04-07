@@ -21,12 +21,16 @@ function suivant(){
     }
 
 return (
-    <div className="carousel"><img src={images[indexEnCours]}/>
-    <button className="prec" onClick={precedent}>
-        <img src={precImg} alt="vecteur Precedent" />
-    </button>
-    <button className="next" onClick={suivant}>
-        <img src={nextImg} alt="vecteur Suivant" />
+    <div className="carousel">
+        <img src={images[indexEnCours]}/>
+        {images.length>1?
+        <div><button className="prec" onClick={precedent}>
+            <img src={precImg} alt="vecteur Precedent" />
         </button>
+        <button className="next" onClick={suivant}>
+            <img src={nextImg} alt="vecteur Suivant" />
+        </button>
+        <span>{(indexEnCours+1) + '/'+ images.length}</span>
+        </div> :null}
     </div>)
 }
