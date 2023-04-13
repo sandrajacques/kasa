@@ -15,9 +15,9 @@ $primary-color: #FF6060;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  
 }
-body{
+
+body {
   font-size: 18px;
 }
 
@@ -31,10 +31,12 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
-  img{
+
+  img {
     width: 210px;
     height: auto;
   }
+
   nav {
     display: flex;
     font-weight: 500;
@@ -48,24 +50,26 @@ header {
     }
   }
 }
-.banniere-accueil{
-background-image: url("../assets/img/banniere-accueil.png");
-margin: auto;
-max-width: 1240px;
-width: 100%;
-height: 223px;
-mix-blend-mode: darken;
-border-radius: 25px;
-font-weight: 500;
-font-size: 48px;
-line-height: 142.6%;
-color: white;
-text-align: center;
-padding-block: 75px;
-position: relative;
-overflow: hidden;
-margin-bottom: 43px;
+
+.banniere-accueil {
+  background-image: url("../assets/img/banniere-accueil.png");
+  margin: auto;
+  max-width: 1240px;
+  width: 100%;
+  height: 223px;
+  mix-blend-mode: darken;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+  color: white;
+  text-align: center;
+  padding-block: 75px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 43px;
 }
+
 .banniere-accueil::before {
   content: '';
   position: absolute;
@@ -76,6 +80,7 @@ margin-bottom: 43px;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
+
 .container {
   width: 100%;
   background: #F7F7F7;
@@ -97,7 +102,6 @@ margin-bottom: 43px;
   width: 100%;
   align-items: center;
   padding: 20px;
-
 }
 
 .logement__container {
@@ -113,6 +117,7 @@ margin-bottom: 43px;
   margin-block: 24px;
   color: $primary-color;
   font-weight: 500;
+  flex-wrap: wrap;
 
   .title {
     font-size: 36px;
@@ -123,10 +128,11 @@ margin-bottom: 43px;
     margin-bottom: 23px;
     font-size: 18px;
   }
-  .tags{
-  display: flex;
-  flex-wrap: wrap;
-  gap:15px;
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   span {
@@ -136,7 +142,6 @@ margin-bottom: 43px;
     font-size: 14px;
     padding: 2px 40px;
     margin-right: 10px;
-
   }
 
   .logement__hote__nom-image {
@@ -147,9 +152,7 @@ margin-bottom: 43px;
       max-width: 100px;
       text-align: right;
       margin-right: 10px;
-
     }
-
 
     img {
       border-radius: 50%;
@@ -162,33 +165,59 @@ margin-bottom: 43px;
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+    gap: 16px;
   }
 }
-@media (max-width: 864px) {
 
+@media (max-width: 864px) {
   header {
-      img {
-          width: 145px;
-      }
+    img {
+      width: 145px;
+    }
   }
 }
 
 @media (max-width:600px) {
-  header{
-  nav{
-    font-size: 12px;
-    gap: 10px;
+  header {
+    nav {
+      font-size: 12px;
+      gap: 10px;
+    }
   }
-}
-.banniere-accueil{
-height: 111px;
-font-size: 24px;
-padding-block: 20px;
-text-align: left;
-border-radius: 10px;
-padding-left: 16px;
-margin-inline: 10px;
-width: auto;
-padding-right: 112px;
-}
+
+  .banniere-accueil {
+    height: 111px;
+    font-size: 24px;
+    padding-block: 20px;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 16px;
+    margin-inline: 10px;
+    width: auto;
+    padding-right: 112px;
+  }
+
+  .logement__hote {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+
+    .logement__hote__nom-image {
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .etoiles {
+      gap: 6px;
+
+      img {
+        width: 22px;
+        height: 22px;
+        object-fit: fill;
+      }
+    }
+  }
 }
