@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import './styles/index.scss'
 import Header from './composants/Header';
 import Footer from './composants/Footer';
-import Routage from './routage';
+import Routage from './Routage';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

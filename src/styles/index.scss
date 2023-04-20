@@ -8,24 +8,19 @@ $primary-color: #FF6060;
 @import './error404';
 @import './footer';
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
-
 body {
   font-size: 18px;
 }
-
 img {
   display: block;
   object-fit: cover;
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -36,13 +31,11 @@ header {
     width: 210px;
     height: auto;
   }
-
   nav {
     display: flex;
     font-weight: 500;
     font-size: 24px;
     gap: 57px;
-
     a {
       color: $primary-color;
       margin-left: 15px;
@@ -50,7 +43,6 @@ header {
     }
   }
 }
-
 .banniere-accueil {
   background-image: url("../assets/img/banniere-accueil.png");
   margin: auto;
@@ -69,7 +61,6 @@ header {
   overflow: hidden;
   margin-bottom: 43px;
 }
-
 .banniere-accueil::before {
   content: '';
   position: absolute;
@@ -80,7 +71,6 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: -1;
 }
-
 .container {
   width: 100%;
   background: #F7F7F7;
@@ -93,7 +83,6 @@ header {
   max-width: 1240px;
   margin-inline: auto;
 }
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -103,14 +92,12 @@ header {
   align-items: center;
   padding: 20px;
 }
-
 .logement__container {
   width: 100%;
   max-width: 1240px;
   margin-inline: auto;
   padding: 20px;
 }
-
 .logement__infos {
   display: flex;
   justify-content: space-between;
@@ -118,23 +105,19 @@ header {
   color: $primary-color;
   font-weight: 500;
   flex-wrap: wrap;
-
   .title {
     font-size: 36px;
     line-height: 51px;
   }
-
   p {
     margin-bottom: 23px;
     font-size: 18px;
   }
-
   .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
   }
-
   span {
     background-color: $primary-color;
     color: white;
@@ -143,24 +126,20 @@ header {
     padding: 2px 40px;
     margin-right: 10px;
   }
-
   .logement__hote__nom-image {
     display: flex;
     align-items: center;
-
     p {
       max-width: 100px;
       text-align: right;
       margin-right: 10px;
     }
-
     img {
       border-radius: 50%;
       width: 64px;
       height: 64px;
     }
   }
-
   .etoiles {
     display: flex;
     justify-content: flex-end;
@@ -168,7 +147,7 @@ header {
     gap: 16px;
   }
 }
-
+/*********RESPONSIVE MediaQueries***********/
 @media (max-width: 864px) {
   header {
     img {

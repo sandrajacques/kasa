@@ -10,7 +10,7 @@ export default function Accordeon(props) {
             <img src={fleche} alt="fleche Icon" />
         </div>
         <div className="content">
-            {props.contenuTab?
+            {props.contenuTab?//s'il y a un tableau (équipements)on affiche une liste ul, sinon on affiche directement dans une balise p le contenu.
             <ul>{props.contenuTab.map((item,index)=><li key={index}>{item}</li>)}</ul>
             :
             <p>{props.contenu}</p>}</div>
